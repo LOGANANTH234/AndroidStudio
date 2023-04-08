@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+  android:layout_marginBottom="1dp"
+
+    android:backgroundTint="@color/white">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:id="@+id/imgface"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahalya"
+        android:layout_marginLeft="70dp"
+        android:textSize="20dp"
+        android:id="@+id/name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+/>
+
+    <ImageView
+        android:layout_width="11dp"
+        android:layout_height="13dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/imgface"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/recivedimgid"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/recivedimgid"
+    android:layout_below="@+id/name"
+    android:text="Called"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="5dp"
+    android:textSize="13dp"
+    android:textStyle="bold"
+    android:id="@+id/calledid"
+    android:textColor="#9FA3AC"
+
+
+/>
+
+    <ImageView
+        android:id="@+id/imgCamera"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_centerInParent="true"
+        android:src="@drawable/camera" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/calledid"
+        android:layout_marginLeft="5dp"
+        android:textColor="#9FA3AC"
+
+
+android:layout_marginTop="32dp"
+        android:text=". 42m"
+        android:textSize="11dp"
+        android:id="@+id/timee"
+        />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

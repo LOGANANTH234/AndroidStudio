@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/linaer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_32" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_46"
+            android:id="@+id/image2"
+            android:layout_toRightOf="@+id/image"
+
+android:layout_centerHorizontal="true"
+            app:civ_border_color="#9FA3AC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:id="@+id/txt"
+            android:layout_centerInParent="true"
+            android:text="Chat"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image3"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/txt"
+            android:src="@drawable/img_48" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/img_56" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_marginTop="40dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/recyclerid"
+
+    />
+
+</RelativeLayout>
