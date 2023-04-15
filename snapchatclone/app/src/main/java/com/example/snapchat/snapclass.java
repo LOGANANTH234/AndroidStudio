@@ -7,7 +7,12 @@ public class snapclass {
     private String received;
     private String time;
 
-    public snapclass(int imageface, String name,int imagerecived, String received, String time) {
+
+    public static  void setSearchgone(boolean searchgone) {
+        searchgone = searchgone;
+    }
+
+    public snapclass(int imageface, String name, int imagerecived, String received, String time) {
         this.imageface = imageface;
         this.name = name;
         this.imagerecived = imagerecived;

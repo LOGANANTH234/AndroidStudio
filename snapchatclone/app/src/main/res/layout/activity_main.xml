@@ -8,7 +8,16 @@
     android:padding="10dp"
     android:background="@color/white"
     >
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerid"
 
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <RelativeLayout
         android:id="@+id/linaer"
         android:layout_width="match_parent"
@@ -17,7 +26,7 @@
         >
 
 
-        >
+
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/image"
@@ -30,6 +39,7 @@
             android:src="@drawable/img_46"
             android:id="@+id/image2"
             android:layout_toRightOf="@+id/image"
+
 
 android:layout_centerHorizontal="true"
             app:civ_border_color="#9FA3AC"/>
@@ -50,7 +60,8 @@ android:id="@+id/txt"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@+id/txt"
-            android:src="@drawable/img_48" />
+            android:src="@drawable/img_48"
+            />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/image4"
@@ -64,12 +75,209 @@ android:id="@+id/txt"
 
     </RelativeLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-    android:layout_marginTop="40dp"
+<RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/recyclerid"
+    android:id="@+id/searchreltive"
 
-    />
+android:visibility="gone"
+    >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardCornerRadius="40dp"
+
+
+            android:id="@+id/cardview"
+            app:cardBackgroundColor="#d3d3d3"
+
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ba"
+            android:layout_marginTop="5dp"
+android:id="@+id/searchin"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="43dp"
+                android:hint="Search"
+                android:textSize="20dp"
+                android:layout_marginTop="6dp"
+                android:textColorHint="@color/white"
+                />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="CANCEL"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="250dp"
+    android:textColor="@color/black"
+    android:id="@+id/cancelidtext"
+   android:textFontWeight="@integer/material_motion_duration_medium_2"
+/>
+        </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/newrelative"
+        android:layout_below="@+id/searchreltive"
+android:visibility="gone"
+
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/white"
+
+            >
+            <TextView
+                android:id="@+id/recents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:text="Recents"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginLeft="12dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/rigth">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+android:background="@color/white"
+
+            >
+
+            <ImageView
+                android:id="@+id/imginbelowrecnets"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_13" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:layout_below="@+id/imginbelowrecnets"
+            android:text="LOGA"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/loga"
+            android:textColor="@color/black"
+            />
+          <com.google.android.material.card.MaterialCardView
+              android:layout_width="50dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/loga"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="2dp"
+
+              app:cardCornerRadius="15dp"
+              app:cardBackgroundColor="#d3d3d3">
+              <ImageView
+                  android:layout_marginLeft="2dp"
+                  android:layout_width="15dp"
+                  android:layout_height="10dp"
+                  android:layout_marginTop="2dp"
+                  android:src="@drawable/receivedmsgblue"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Chat"
+                  android:textSize="10dp"
+                  android:layout_marginStart="18dp"
+                  android:layout_marginLeft="10dp"
+
+                  />
+
+          </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginLeft="12dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+ android:layout_marginTop="35dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        android:layout_marginStart="130dp"
+
+        android:id="@+id/rigth1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/imginbelowrecnets"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imginbelowrecnets"
+                android:text="KISHORE"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/loga"
+                android:textColor="@color/black"
+                />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loga"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="#d3d3d3">
+                <ImageView
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/receivedmsgblue"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Chat"
+                    android:textSize="10dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>
+

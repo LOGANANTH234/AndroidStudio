@@ -2,6 +2,7 @@ package com.example.snapchat;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,13 +13,18 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-
-
+private  ImageView img2,searchin;
+private TextView cancelid,recentid;
+private RelativeLayout searchreltive,newrelative;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +57,34 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        img2=findViewById(R.id.image2);
+        searchin=findViewById(R.id.searchin);
+searchreltive=findViewById(R.id.searchreltive);
+        newrelative=findViewById(R.id.newrelative);
+cancelid=findViewById(R.id.cancelidtext);
+        recentid=findViewById(R.id.recents);
+     img2.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             searchreltive.setVisibility(View.VISIBLE);
+         }
+     });
 
+       cancelid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                searchreltive.setVisibility(View.INVISIBLE);
+                newrelative.setVisibility(View.INVISIBLE);
+            }
+        });
+
+
+searchin.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        newrelative.setVisibility(View.VISIBLE);
+    }
+});
     }
 
 

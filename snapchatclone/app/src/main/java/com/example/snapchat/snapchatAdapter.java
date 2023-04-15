@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -77,6 +78,8 @@ this.context=context;
         private  TextView recievedtxt;
         private TextView time;
         private ImageView camera;
+        private RelativeLayout searchgone;
+        private ImageView img2;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
@@ -86,6 +89,7 @@ this.context=context;
           recievedtxt=itemView.findViewById(R.id.calledid);
             time=itemView.findViewById(R.id.timee);
             camera =  itemView.findViewById(R.id.imgCamera);
+
         }
     }
 
